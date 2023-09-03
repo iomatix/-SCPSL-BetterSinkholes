@@ -13,9 +13,10 @@ namespace BetterSinkholes
         public EventHandlers(BetterSinkholes plugin) => this.plugin = plugin;
         public void OnWaitingPlayer()
         {
-            foreach (SinkholeHazard sinkholeHazard in Hazard.List.Select(x => x.Is(out SinkholeHazard _)).Cast<SinkholeHazard>())
+            foreach (Hazard hazard in Hazard.List)
             {
-                sinkholeHazard.MaxDistance = plugin.Config.SlowDistance;
+                if (hazard.Is(out SinkholeHazard sinkholeHazard))
+                    sinkholeHazard.MaxDistance = plugin.Config.SlowDistance;
             }
         }
         public void OnStayingOnEnvironmentalHazard(StayingOnEnvironmentalHazardEventArgs ev) 
