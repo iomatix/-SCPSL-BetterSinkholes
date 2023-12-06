@@ -16,7 +16,7 @@ namespace BetterSinkholes
             foreach (Hazard hazard in Hazard.List)
             {
                 if (hazard.Is(out SinkholeHazard sinkholeHazard))
-                    sinkholeHazard.MaxDistance = plugin.Config.SlowDistance;
+                    sinkholeHazard.MaxDistance *= plugin.Config.SlowDistance;
             }
         }
         public void OnStayingOnEnvironmentalHazard(StayingOnEnvironmentalHazardEventArgs ev) 
