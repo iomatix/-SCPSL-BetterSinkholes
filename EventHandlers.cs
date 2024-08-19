@@ -3,7 +3,12 @@ using Exiled.API.Enums;
 using Exiled.API.Extensions;
 using Exiled.API.Features;
 using Exiled.API.Features.Hazards;
+using Exiled.CustomModules.API.Extensions;
 using Exiled.Events.EventArgs.Player;
+using HarmonyLib;
+using PlayerRoles;
+using System;
+using System.Linq;
 using UnityEngine;
 
 namespace BetterSinkholes
@@ -17,6 +22,7 @@ namespace BetterSinkholes
 
             foreach (Hazard hazard in Hazard.List)
             {
+
                 if (hazard.Is(out SinkholeHazard sinkholeHazard))
                 {
                     sinkholeHazard.MaxDistance *= plugin.Config.SlowDistance;
@@ -26,6 +32,7 @@ namespace BetterSinkholes
         }
         public void OnStayingOnEnvironmentalHazard(StayingOnEnvironmentalHazardEventArgs ev) 
         {
+            if (ev.Player.Role == RoleTypeId.Scp106) return;
             if (ev.Hazard is not SinkholeHazard sinkholeHazard || ev.Player.IsEffectActive<PocketCorroding>()) return;
 
             float distanceToHazardCenter = Vector3.Distance(sinkholeHazard.Position, ev.Player.Position);
