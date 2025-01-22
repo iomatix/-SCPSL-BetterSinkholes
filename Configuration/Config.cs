@@ -1,7 +1,5 @@
 ﻿using Exiled.API.Interfaces;
 using System.ComponentModel;
-using Exiled.API.Features;
-
 namespace BetterSinkholes.Configuration
 {
     public class Config : IConfig

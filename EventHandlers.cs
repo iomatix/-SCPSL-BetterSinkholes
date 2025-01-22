@@ -1,14 +1,7 @@
 ﻿using CustomPlayerEffects;
-using Exiled.API.Enums;
-using Exiled.API.Extensions;
-using Exiled.API.Features;
 using Exiled.API.Features.Hazards;
-using Exiled.CustomModules.API.Extensions;
 using Exiled.Events.EventArgs.Player;
-using HarmonyLib;
 using PlayerRoles;
-using System;
-using System.Linq;
 using UnityEngine;
 
 namespace BetterSinkholes
