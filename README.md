@@ -24,6 +24,12 @@ Once downloaded, place the BetterSinkholes2.dll file into the /EXILED/Plugins fo
 | --- | --- | --- | --- |
 | `TeleportMessage` | Broadcast | '' | Simple Exiled Broadcast. Can use Unity's RichText. |
 
+## Contributors
+
+<a href="https://github.com/iomatix/-SCPSL-BetterSinkholes/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=iomatix/-SCPSL-BetterSinkholes" />
+</a>
+
 ## Thank you!
 
 Thank you for being interested in this plugin and I wish you a great time using it! If you have any ideas/problems feel free to contact me on discord: `_yamato._`
