@@ -10,8 +10,8 @@ namespace BetterSinkholes
         public override string Author => "Yamato & Gamers-Workshop & iomatix";
         public override string Name => "BetterSinkholes";
         public override string Prefix => "BetterSinkholes";
-        public override Version Version { get; } = new(6, 1, 0);
-        public override Version RequiredExiledVersion { get; } = new(9, 4, 0);
+        public override Version Version { get; } = new(6, 1, 2);
+        public override Version RequiredExiledVersion { get; } = new(9, 5, 0);
 
         public static EventHandlers eventHandlers;
 
