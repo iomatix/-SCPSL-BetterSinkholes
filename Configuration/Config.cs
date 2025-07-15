@@ -1,7 +1,8 @@
-﻿using Exiled.API.Interfaces;
-using System.ComponentModel;
-namespace BetterSinkholes.Configuration
+﻿namespace BetterSinkholes.Configuration
 {
+    using Exiled.API.Interfaces;
+    using System.ComponentModel;
+
     public class Config : IConfig
     {
         [Description("Enable/disable BetterSinkholes")]
@@ -9,6 +10,9 @@ namespace BetterSinkholes.Configuration
 
         [Description("Distance from the center of a sinkhole where player gets warped")]
         public float TeleportDistance { get; private set; } = 0.25f;
+
+        [Description("Life time of the items thrown to the pocket dimension in seconds.")]
+        public float ItemPocketLifetime { get; set; } = 320f;
 
         [Description("Distance from the center of a sinkhole where player starts getting slowed")]
         public float SlowDistance { get; private set; } = 0.99f;
@@ -19,7 +23,6 @@ namespace BetterSinkholes.Configuration
 
         [Description("Debug BetterSinkholes")]
         public bool Debug { get; set; }
-
 
     }
 }
