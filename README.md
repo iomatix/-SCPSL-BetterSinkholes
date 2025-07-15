@@ -2,6 +2,12 @@
 
 BetterSinkholes is a plugin that makes **sinkhole environmental hazards** (found in Light Containment Zone - IX Intersections) more realistic and  similar to SCP: Containment Breach. With the use of this plugin, players who walk into sinkholes fall into the pocket dimension *and may never return*.
 
+## Supporting Development
+
+My mods are **always free to use**.
+
+If you appreciate my work, you can support me by [buying me a coffee](https://buymeacoffee.com/iomatix).
+
 ## Requirements
 - This plugin uses [EXILED](https://github.com/galaxy119/EXILED/).
 - Make sure the config option in `config_gameplay.txt` called `sinkhole_spawn_chance` is set to higher than 0.
